@@ -1,0 +1,14 @@
+---
+dist: trusty
+
+language: python
+python: 3.6
+
+install: pip install -r requirements.yml
+
+script: travis-pls sleep 620
+
+notifications:
+  email:
+    on_success: never
+    on_failure: never
